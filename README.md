@@ -34,12 +34,12 @@ visualization.
 git clone git@github.com:Qulacs-Osaka/VQE-generated-dataset.git
 ```
 
-| Name                | Content                   | Examples | Size       |
-|---------------------|---------------------------|----------|------------|
-| `data/qasm/04qubit` | 4-qubit quantum circuits  | 1,500    | 15 MBytes  |
-| `data/qasm/08qubit` | 8-qubit quantum circuits  | 1,800    | 49 MBytes  |
-| `data/qasm/12qubit` | 12-qubit quantum circuits | 1,800    | 89 MBytes  |
-| `data/qasm/16qubit` | 16-qubit quantum circuits | 1,800    | 139 MBytes |
+| Name                                         | Content                   | Examples | Size       |
+|----------------------------------------------|---------------------------|----------|------------|
+| [`data/qasm/04qubit`](data%2Fqasm%2F04qubit) | 4-qubit quantum circuits  | 1,500    | 15 MBytes  |
+| [`data/qasm/08qubit`](data%2Fqasm%2F08qubit) | 8-qubit quantum circuits  | 1,800    | 49 MBytes  |
+| [`data/qasm/12qubit`](data%2Fqasm%2F12qubit) | 12-qubit quantum circuits | 1,800    | 89 MBytes  |
+| [`data/qasm/16qubit`](data%2Fqasm%2F16qubit) | 16-qubit quantum circuits | 1,800    | 139 MBytes |
 
 ### Hamiltonian labels
 
@@ -50,7 +50,7 @@ Quantum circuits and ground state of Hamiltonian are assigned to one of the foll
 | 0     | 1D transverse-field Ising model | $$\sum_{n=1}^{N-1} Z_n Z_{n+1} + 2\sum_{n=1}^{N} X_n$$                                                                                                                                                                                                                                                                                                                                                                        |
 | 1     | 1D Heisenberg model             | $$\sum_{n=1}^{N-1} (X_n X_{n+1} + Y_n Y_{n+1} + Z_n Z_{n+1}) + 2\sum_{n=1}^{N} Z_n$$                                                                                                                                                                                                                                                                                                                                          |
 | 2     | Su-Schrieffer-Heeger model      | $$\sum_{n=1}^{N-1}\left(1+\frac{3}{2}(-1)^n\right)\left(X_n X_{n+1}+Y_n Y_{n+1}+Z_n Z_{n+1}\right)$$                                                                                                                                                                                                                                                                                                                          |
-| 3     | $J_1$-$J_2$ model               | $$\sum_{n=1}^{N-1}\left[\left(X_n X_{n+1}+Y_n Y_{n+1}+Z_n Z_{n+1}\right)+3\left(X_n X_{n+2}+Y_n Y_{n+2}+Z_n Z_{n+2}\right)\right]$$                                                                                                                                                                                                                                                                                           |
+| 3     | $J_1$ - $J_2$ model             | $$\sum_{n=1}^{N-1}\left[\left(X_n X_{n+1}+Y_n Y_{n+1}+Z_n Z_{n+1}\right)+3\left(X_n X_{n+2}+Y_n Y_{n+2}+Z_n Z_{n+2}\right)\right]$$                                                                                                                                                                                                                                                                                           |
 | 4     | 1D Hubbard model                | $$-\sum_{j=1}^{N/2-1} \sum_{\sigma \in \{\uparrow,\downarrow\}}\left(a_{j, \sigma}^{\dagger} a_{j+1, \sigma}+\mathrm{H.c.}\right)+ \sum_{j=1}^{N/2}\left(a_{j, \uparrow}^\dagger a_{j, \uparrow}-\frac{1}{2}\right)\left(a_{j, \downarrow}^\dagger a_{j, \downarrow}-\frac{1}{2}\right)$$                                                                                                                                     |
 | 5     | 2D Hubbard model                | $$-\sum_{\sigma \in \{\uparrow,\downarrow\}}\left(\sum_{j_x=1}^{N/4-1}\sum_{j_y=1}^2 a_{j_x,j_y, \sigma}^{\dagger} a_{j_x+1,j_y, \sigma}+\sum_{j_x=1}^{N/4}a_{j_x,1, \sigma}^{\dagger} a_{j_x,2, \sigma}+\mathrm{H.c.}\right)+ \sum_{j_x=1}^{N/4}\sum_{j_y=1}^2\left(a_{j_x,j_y, \uparrow}^\dagger a_{j_x,j_y, \uparrow}-\frac{1}{2}\right)\left(a_{j_x,j_y, \downarrow}^\dagger a_{j_x,j_y, \downarrow}-\frac{1}{2}\right)$$ |
 
@@ -74,6 +74,7 @@ Quantum circuits data is assigned to one of the following ansatz's labels:
 ## <a name="usage"></a>Usage
 
 ### Loading data with Python
+
 Use `utils/qc_reader` in this repo:
 
 ```python
@@ -87,7 +88,6 @@ qasm_str, label = qc_reader.load_qc(path="data/qasm", n_qubit=4, label_kind="ham
 
 - [data_analisys.ipynb](example%2Fdata_analisys.ipynb)
 - [data_visualization.ipynb](example%2Fdata_visualization.ipynb)
-
 
 ## <a name="visualization"></a>Visualization
 
@@ -105,11 +105,10 @@ colored depending on their fidelity with the ground state of each label’s Hami
 
 ![mds_fidelity.png](doc%2Fimage%2Fmds_fidelity.jpeg)
 
-
-
 ### Fidelity between each data and the ground state of each label’s Hamiltonian
 
 ![data_fidelity.png](doc%2Fimage%2Fdata_fidelity.jpeg)
+
 ## <a name="citing"></a> Citing VQE-generated quatnum circuit dataset
 
 [//]: # (after I upload arxiv, I write the link)
