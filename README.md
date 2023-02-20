@@ -26,8 +26,8 @@ variational quantum eigensolver (VQE).
 
 ## <a name="get-the-data"></a>Get the Data
 
-You can clone this GitHub repository; the dataset appears under `data/qasm`.
-This repo also contains ground state of the Hamiltonian under `data/ground_state` and some scripts for benchmark and
+You can clone this GitHub repository; the dataset appears under [`data/qasm`](data%2Fqasm).
+This repo also contains ground state of the Hamiltonian under [`data/ground_state`](data%2Fground_state) and some scripts for benchmark and
 visualization.
 
 ```bash
@@ -75,7 +75,7 @@ Quantum circuits data is assigned to one of the following ansatz's labels:
 
 ### Loading data with Python
 
-Use `utils/qc_reader` in this repo:
+Use [`utils/qc_reader.py`](utils%2Fqc_reader.py) in this repo:
 
 ```python
 from utils import qc_reader
@@ -86,8 +86,8 @@ qasm_str, label = qc_reader.load_qc(path="data/qasm", n_qubit=4, label_kind="ham
 
 ### Example code
 
-- [data_analisys.ipynb](example%2Fdata_analisys.ipynb)
-- [data_visualization.ipynb](example%2Fdata_visualization.ipynb)
+- [`example/data_analisys.ipynb`](example%2Fdata_analisys.ipynb)
+- [`example/data_visualization.ipynb`](example%2Fdata_visualization.ipynb)
 
 ## <a name="visualization"></a>Visualization
 
