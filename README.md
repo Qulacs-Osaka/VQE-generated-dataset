@@ -40,8 +40,8 @@ git clone git@github.com:Qulacs-Osaka/VQE-generated-dataset.git
 | [`data/qasm/04qubit`](data%2Fqasm%2F04qubit) | 4-qubit quantum circuits  | 1,500    | 15 MBytes  |
 | [`data/qasm/08qubit`](data%2Fqasm%2F08qubit) | 8-qubit quantum circuits  | 1,800    | 49 MBytes  |
 | [`data/qasm/12qubit`](data%2Fqasm%2F12qubit) | 12-qubit quantum circuits | 1,800    | 89 MBytes  |
-| [`data/qasm/16qubit`](data%2Fqasm%2F16qubit) | 16-qubit quantum circuits | 1,800    | 139 MBytes |
-
+| [`data/qasm/16qubit`](data%2Fqasm%2F16qubit) | 16-qubit quantum circuits | 1,800    | 138 MBytes |
+| [`data/qasm/20qubit`](data%2Fqasm%2F20qubit) | 20-qubit quantum circuits | 1,800    | 197 MBytes |
 ### Hamiltonian labels
 
 Quantum circuits and ground state of Hamiltonian are assigned to one of the following Hamiltonian's labels:
