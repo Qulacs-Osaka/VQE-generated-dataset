@@ -94,21 +94,21 @@ qasm_str, label = qc_reader.load_qc(path="data/qasm", n_qubit=4, label_kind="ham
 
 ### t-SNE on the dataset
 
-![t-sne.png](doc%2Fimage%2Ft-sne.jpeg)
+![tsne.jpg](doc%2Fimage%2Ftsne.jpg)
 
 ### MDS on the dataset
 
 colored depending on their label
 
-![mds.png](doc%2Fimage%2Fmds.jpeg)
+![mds.jpg](doc%2Fimage%2Fmds.jpg)
 
 colored depending on their fidelity with the ground state of each label’s Hamiltonian
 
-![mds_fidelity.png](doc%2Fimage%2Fmds_fidelity.jpeg)
+![mds_fidelity.jpg](doc%2Fimage%2Fmds_fidelity.jpg)
 
 ### Fidelity between each data and the ground state of each label’s Hamiltonian
 
-![data_fidelity.png](doc%2Fimage%2Fdata_fidelity.jpeg)
+![data_fidelity.jpg](doc%2Fimage%2Fdata_fidelity.jpg)
 
 ## <a name="citing"></a> Citing VQE-generated quatnum circuit dataset
 
