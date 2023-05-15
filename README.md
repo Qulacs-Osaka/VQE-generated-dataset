@@ -72,6 +72,7 @@ Quantum circuits data is assigned to one of the following ansatz's labels:
 | 8     |                           | Ladder       |
 | 9     |                           | Cross-Ladder |
 
+See [example/ansatz_plot.ipynb](example%2Fansatz_plot.ipynb) for a detailed implementation of ansatz with Qiskit.
 ## <a name="usage"></a>Usage
 
 ### Loading data with Python
