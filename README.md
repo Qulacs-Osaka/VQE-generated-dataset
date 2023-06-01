@@ -135,3 +135,17 @@ Biblatex entry:
 
 [//]: # (## <a name="license"></a>License)
 
+# Changelog
+
+## [1.0] - 2023-02-21
+The dataset was published.
+
+## [1.1] - 2023-06-01
+
+### Added or Changed
+- Added this changelog :)
+- **The data for label 5 has been changed** due to a change in the way the Hamiltonian is mapped to the qubits in label 5. See updated arxiv for details.
+  - Updated ground state for label 5.
+  - Updated visualization results.
+- **Added 20-qubits dataset**
+- Added an example implementation of ansatz

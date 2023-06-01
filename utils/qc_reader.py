@@ -10,7 +10,7 @@ def load_qc(path: str, n_qubit: int, label_kind: str = "hamiltonian") -> Tuple[L
     """
     n_ansatz_type = 10
     n_data_per_ansatz = 30
-    valid_qubits = [4, 8, 12, 16]
+    valid_qubits = [4, 8, 12, 16, 20]
     valid_label_kind = ["hamiltonian", "ansatz", "ansatz_reps"]
 
     # check parameters
