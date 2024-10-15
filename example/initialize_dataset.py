@@ -90,10 +90,9 @@ class MyOwnDataset(Dataset):
     def process(self):
         """Here I construct the graph and pass it to data object
 
-        TODO: Reads the raw CSV files, constructs graph objects for each row, and saves them in the processed directory.
         """
         idx4, idx8, idx12, idx16, idx20 = 0, 0, 0, 0, 0
-        for qubit_dir in os.listdir(self.raw_dir):  # TODO: root_dirにはqasmを設定し、ここでは、04qubitなどのフォルダ階層のリストを取得する
+        for qubit_dir in os.listdir(self.raw_dir):
             qubit_match = re.search(r'(\d+)qubit', qubit_dir)
             if not qubit_match:
                 continue
